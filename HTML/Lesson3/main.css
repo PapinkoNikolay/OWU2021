@@ -1,0 +1,28 @@
+
+.father {
+    width: 1000px;
+    height: 1000px;
+    background: #303030;
+    margin: 0 auto;
+}
+
+.box1 {
+    width: 1000px;
+    height: 300px;
+    background: chartreuse;
+}
+.box2 {
+    width: 700px;
+    height: 700px;
+    background: brown;
+}
+.box3 {
+    width: 300px;
+    height: 700px;
+    background: blue;
+}
+
+.flex {
+    display: flex;
+    align-items: flex-start;
+}

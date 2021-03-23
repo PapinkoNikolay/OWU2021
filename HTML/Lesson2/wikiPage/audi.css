@@ -1,0 +1,33 @@
+.titlePage {
+    padding: 0;
+    border-bottom: 1px solid;
+    margin-bottom: 0.25em;
+}
+
+.bodyContent {
+
+    width: 400px;
+    padding-right: 30em;
+    padding-left: 30em;
+}
+
+.titleBox {
+
+
+    text-align: center;
+}
+
+.box {
+    width: 400px;
+    height: 300px;
+    margin-bottom: 4px;
+    background:#f8f9fa;
+    border: 1px solid;
+}
+
+.titlePageHistory {
+    margin:10px;
+    padding: 0px;
+    border-bottom: 1px solid;
+    margin-bottom: 0.25em;
+}
