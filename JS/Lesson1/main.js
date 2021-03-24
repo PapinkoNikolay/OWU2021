@@ -298,11 +298,11 @@
 //     Если светофор в аварийном режиме вывести "делай что хочешь"!
 
 // let trafficLight = prompt('введите цвет светофора:', '');
-// if (trafficLight == 'зеленый') {
+// if (trafficLight === 'зеленый') {
 //     alert('иди');
-// } else if (trafficLight == 'желтый') {
+// } else if (trafficLight === 'желтый') {
 //     alert('подожди');
-// } else if (trafficLight == 'красный') {
+// } else if (trafficLight === 'красный') {
 //     alert('стой');
 // } else {
 //     alert('ввод не верный, делай что хочешь');
@@ -319,26 +319,21 @@
 //     Если светофор красный - и машины есть вывести "стой и жди".
 //     Если светофор в аварийном режиме вывести "делай что хочешь"!
 
-//30 let trafficLight = prompt('введите цвет светофора:', '');
+// let trafficLight = prompt('введите цвет светофора:', '');
 // let isCarPresent = confirm('машины есть на дороге?');
-// if (trafficLight == 'зеленый' && isCarPresent == false) {
+// if (trafficLight === 'зеленый' && !isCarPresent) {
 //     alert('иди');
-// } else if (trafficLight == 'зеленый' && isCarPresent == true) {
+// } else if (trafficLight === 'зеленый' && isCarPresent) {
 //     alert('подожди пока нарушители проедут');
-// }
-//  else if (trafficLight == 'желтый' && isCarPresent == true){
-//      alert('жди');
-// }
-// else if (trafficLight == 'желтый' && isCarPresent == false){
+// } else if (trafficLight === 'желтый' && isCarPresent) {
+//     alert('жди');
+// } else if (trafficLight === 'желтый' && !isCarPresent) {
 //     alert('все равно жди');
-// }
-// else if (trafficLight == 'красный' && isCarPresent == false){
+// } else if (trafficLight === 'красный' && !isCarPresent) {
 //     alert('стой все рано');
-// }
-// else if (trafficLight == 'красный' && isCarPresent == true){
+// } else if (trafficLight === 'красный' && isCarPresent) {
 //     alert('стой и жди');
-// }
-// else{
+// } else {
 //     alert('ввод не верный, делай что хочешь');
 // }
 
