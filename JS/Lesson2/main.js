@@ -186,3 +186,112 @@
 //     console.log(`------------------`);
 // }
 
+// - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for зібрати всі букви в слово.
+
+// let array = ['a', 'b', 'c'];
+// let str = '';
+// for (let i = 0; i < array.length; i++) {
+//     str = str + array[i];
+//
+// }
+// console.log(str);
+
+// - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу while зібрати всі букви в слово.
+
+// let array = ['a', 'b', 'c'];
+// let i =0;
+// let str = '';
+// while (i<array.length){
+//     str = str+array[i];
+//     i++;
+// }
+// console.log(str);
+
+// - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for of зібрати всі букви в слово.
+
+ // let array = ['a', 'b', 'c'];
+ // let str='';
+ //
+ // for (let value of array){
+ //     str=str+value;
+ // }
+ // console.log(str);
+
+//!!!!!!!!!!!!!!!!!!// - Дан масив ['a', 'b', 'c']. Додайте йому в кінець елементи 1, 2, 3 за допомогою циклу.
+
+ // let muss = ['a', 'b', 'c'];
+ // for (let i = 0; i <= muss.length; i++) {
+ //     muss.push(muss[i])
+ // }
+ // console.log(muss);
+
+// - Дан масив [1, 2, 3]. Зробіть з нього новий масив [3, 2, 1].
+
+// let array = [1,2,3];
+// array.reverse();
+// console.log(array);
+// ----------------------------
+// let mass = [1,2,3];
+// let mass1=[];
+// for (let i = 0;i<mass.length;i++){
+//     mass1.unshift(mass[i]);
+// }
+// console.log(mass1);
+
+// - Дан масив [1, 2, 3]. Додайте йому в кінець елементи 4, 5, 6.
+
+// let arr = [1,2,3];
+// arr.push(4);
+// arr.push(5);
+// arr.push(6);
+// console.log(arr);
+
+// - Дан масив [1, 2, 3]. Додайте йому в початок елементи 4, 5, 6.
+
+// let arr = [1,2,3];
+// arr.unshift(4);
+// arr.unshift(5);
+// arr.unshift(6);
+// console.log(arr);
+
+// - Дан масив ['js', 'css', 'jq']. Виведіть на екран перший елемент за допомогою shift()
+
+// let arr = ['js', 'css', 'jq'];
+// let value=arr.shift();
+// console.log(value);
+
+// - Дан масив ['js', 'css', 'jq']. Виведіть на екран останній елемент за допомогою pop()
+
+// let arr = ['js', 'css', 'jq'];
+// let value = arr.pop();
+// console.log(value);
+
+// - Дан масив [1, 2, 3, 4, 5]. За допомогою методу/функції slice перетворіть масив в [4, 5].
+
+// let arr = [1,2,3,4,5];
+// let newArr = arr.slice(-2);
+// console.log(newArr);
+
+// - Дан масив [1, 2, 3, 4, 5]. За допомогою методу/функції slice перетворіть масив в [1,2].
+
+// let arr = [1,2,3,4,5];
+// let newArr = arr.slice(0,2)
+// console.log(newArr);
+
+// - Дан масив [1, 2, 3, 4, 5]. За допомогою методу/функції splice перетворіть масив в [1, 4, 5].
+
+// let arr = [1,2,3,4,5];
+// arr.splice(1,2)
+// console.log(arr);
+
+// - Дан масив [1, 2, 3, 4, 5]. За допомогою методу/функції splice зробіть з нього масив [1, 2, 3, 'a', 'b', 'c', 4, 5].
+
+// let arr = [1,2,3,4,5]
+// arr.splice(3,-2,'a','b','c');
+// console.log(arr);
+
+// - Дан масив [1, 2, 3, 4, 5]. За допомогою методу/функції splice зробіть з нього масив [1, 'a', 'b', 2, 3, 4, 'c', 5, 'e'].
+
+let arr = [1, 2, 3, 4, 5];
+arr.splice(1,-6,'a','b',-2,'c',-0,'e');
+console.log(arr);
