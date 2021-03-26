@@ -217,11 +217,11 @@
 // }
 // console.log(str);
 
-//!!!!!!!!!!!!!!!!!!// - Дан масив ['a', 'b', 'c']. Додайте йому в кінець елементи 1, 2, 3 за допомогою циклу.
+// - Дан масив ['a', 'b', 'c']. Додайте йому в кінець елементи 1, 2, 3 за допомогою циклу.
 
 // let muss = ['a', 'b', 'c'];
-// for (let i = 0; i <= muss.length; i++) {
-//     muss.push(muss[i])
+// for (let i = 1; i <= 3; i++) {
+//     muss.push(i)
 // }
 // console.log(muss);
 
@@ -292,7 +292,7 @@
 
 // - Дан масив [1, 2, 3, 4, 5]. За допомогою методу/функції splice зробіть з нього масив [1, 'a', 'b', 2, 3, 4, 'c', 5, 'e'].
 
-//!!!!!!!!!!!!!!!!!!! let arr = [1, 2, 3, 4, 5];
+//!!!!!!!!!!!! let arr = [1, 2, 3, 4, 5];
 // arr.splice(0,0,1, 'a', 'b', 2, 3, 4, 'c', 5, 'e');
 // console.log(arr);
 
@@ -438,40 +438,133 @@
 
 // перебрати циклом while та вивести  числа тільки парні  значення
 
- // let arr = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18];
- // let i = arr.length-1;
- // while (i >= 0) {
- //     if (arr[i] % 2 === 0) {
- //         console.log(arr[i]);
- //     }
- //     i--
- // }
+// let arr = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18];
+// let i = arr.length-1;
+// while (i >= 0) {
+//     if (arr[i] % 2 === 0) {
+//         console.log(arr[i]);
+//     }
+//     i--
+// }
 
 // замінити кожне число кратне 3 на слово "okten"
 
- // let arr = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18];
- //
- // for (let i = arr.length-1; i >=0; i--) {
- //     if (arr[i] % 3 === 0) {
- //         arr[i] = 'okten';
- //     }
- // }
- // console.log(arr);
+// let arr = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18];
+//
+// for (let i = arr.length-1; i >=0; i--) {
+//     if (arr[i] % 3 === 0) {
+//         arr[i] = 'okten';
+//     }
+// }
+// console.log(arr);
 
 // 10
 // створити пустий масив та :
 //     - заповнити його 50 парними числами за допомоги циклу.
 
- // let arr=[];
- // for (let i = 2; i <=100; i=i+2) {
- // arr.push(i)
- // }
- // console.log(arr);
+// let arr=[];
+// for (let i = 2; i <=100; i=i+2) {
+// arr.push(i)
+// }
+// console.log(arr);
 
-// - заповнити його 50 непарними числами за допомоги циклу.
+//- заповнити його 50 непарними числами за допомоги циклу.
+//debugger
 
- // let arr=[];
- // for (let i = 1; i <=100; i=i+2) {
- // arr.push(i);
- // }
- // console.log(arr);
+// let arr = [];
+// for (let i = 1; i <= 100; i = i + 2) {
+//     arr.push(i)
+// }
+// console.log(arr);
+
+//используя Math.random заполнить массив из ???(сколько хотите) элементов.
+
+// let arr = [];
+// for (let i = 0; i < 50; i++) {
+//     arr.push(Math.random());
+// }
+// console.log(arr);
+
+//-------------------------------------
+//     let arr = [];
+//
+// function getRandomArbitrary(min, max) {
+//     return Math.floor(Math.random() * (max - min)) + min;
+// }
+//
+// for (let i = 0; i < 50; i++) {
+//
+//     arr.push(getRandomArbitrary(8,732));
+//
+// }
+// console.log(arr);
+
+// вывести на консоль  каждый третий елемент
+
+// for (let i = 2;i<arr.length;i=i+3){
+//     console.log(arr[i]);
+// }
+
+// вывести на консоль  каждый третий елемент
+// но при условии что его значение является парным.
+
+// for (let i = 2;i<arr.length;i=i+3) {
+//     if(arr[i]%2===0){
+//         console.log(arr[i]);
+//     }
+//
+// }
+
+// вывести на консоль  каждый третий елемент
+// но при условии что он имеет парное значение и
+// записать их в другой массив.
+
+// let newArr = [];
+// for (let i = 2;i<arr.length;i=i+3) {
+//     if(arr[i]%2===0){
+//         newArr.push(arr[i]);
+//     }
+// }
+// console.log(newArr);
+
+// !!!!!!!!!!5. Вывести каждый елемент массива у которого соседний с права элемент - парный
+
+
+// 5 масив з числами [100,250,50,168,120,345,188], Які характеризують вартість окремої покупки. обрахувати середній чек.
+
+// let arr = [100,250,50,168,120,345,188];
+// let sumArr= 0;
+// for (let i = 0; i < arr.length; i++) {
+//     sumArr +=arr[i];
+//
+// }
+// let result = sumArr/arr.length
+//
+// console.log(result);
+
+// 3 створити масив з рандомними значеннями, помножити всі його елементи на 5 та перемістити їх в інший масив.
+
+// let randomArr = [56,87,34,5,7,4,21,6];
+// let newArr = [];
+// for (let i = 0; i < randomArr.length; i++) {
+//     newArr.push(randomArr[i]=randomArr[i]*5);
+// }
+// console.log(randomArr);
+// console.log(newArr);
+
+
+// 4 створити масив з будь якими значеннями (стрінги, числа, і тд...). пройтись по ньому, і якщо об'єкт є числом,
+// додати його в інший масив.
+
+// let arr = ['str',3,'fr',2,false];
+// let newArr = [];
+// for (let i = 0; i < arr.length; i++) {
+//     if (typeof arr[i]==="number"){
+//         newArr.push(arr[i]);
+//
+//     }
+//
+// }
+//
+// console.log(arr);
+// console.log(newArr);
