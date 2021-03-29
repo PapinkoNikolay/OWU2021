@@ -568,3 +568,8 @@
 //
 // console.log(arr);
 // console.log(newArr);
+
+// for (let i = array.length - 1; i >= 0; i--) {
+//     const arrayElement = array[i];
+//
+// }
