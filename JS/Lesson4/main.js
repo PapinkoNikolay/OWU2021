@@ -1,21 +1,28 @@
 // - створити функцію яка виводить масив
-// debugger
+
 // let arr = [];
-// function showMass(mass){
-//     console.log(`${mass}`)
+//
+// function showMass(mass) {
+//     console.log(mass); //or console.log(`${mass}`);
 // }
-// // showMass(arr);
+//
+// // // showMass(arr);
 // // - створити функцію яка заповнює масив рандомними числами та виводить його. Для виведення використати попвередню функцію.
-// function randomArr(mass){
-//     for (let mass1 of mass+1) {
-//         mass1=mass1.push(Math.random()*1);
+// // debugger
+// function randomArr(mass, count = 5) {
+//     for (let i = 0; i < count; i++) {
+//         mass.push(Math.floor(Math.random() * 100));
 //     }
-//
-//
-//
+//     return mass;
 // }
-// randomArr(arr);
+//
+// randomArr(arr)
 // showMass(arr);
+//
+//
+//
+
+
 // - створити функцію яка приймає три числа та виводить та повертає найменьше.
 // let a = prompt('insert number');
 // let b = prompt('insert number');
@@ -147,7 +154,6 @@
 // - Створити функцію яка приймає масив будь яких объектів, та повертає значення кількості об'єктів в масиві
 
 
-
 // let arr = ['name',{name1:''},{age:105},{name2:''}]
 // function objReturn(mass) {
 //     let objCount=[];
@@ -159,14 +165,59 @@
 // objReturn(arr)
 
 // - Створити функцію яка приймає масив будь яких объектів, та повертає загальн кількість полів в них
+
+// let arr = [{name1:'',},{age:105},{name2:'',mas1:''},{name1:'',},{age:105},{name2:'',mas1:''}];
+//
+// function fieldsCount(mass){
+//     let count=0;
+//     for (let i = 0; i < mass.length; i++) {
+//          count += Object.keys(mass[i]).length;
+//     }
+//     return count;
+// }
+//
+// fieldsCount(arr);
+
 // - створити функцію  яка скаладає значення елементів з однаковими індексами  та повертає новий результуючий масив.
 //     Приклад
 //     [1,2,3,4]
 //     [2,3,4,5]
 // результат
 //     [3,5,7,9]
+
+// let mass1 =[1,2,3,4];
+// let mass2 =[1,2,3,4];
+// function sumArr (arr1,arr2){
+//     let newArr = [];
+//     for (let i = 0; i < arr1.length; i++) {
+//         newArr.push(arr1[i]+arr2[i]);
+//     }
+//     return newArr;
+//
+// }
+// sumArr(mass1,mass2);
+
 // - *** приймає масив та число "i", та міняє місцями об`єкт який знаходиться в індексі "i" на "i+1"
+// let arr = []
+// function replace (mass,i){
+//
+// }
+// replace(arr,5);
+
 // - *** створити функцію яка буде переносити елементи з значенням 0 у кінець маисву. Зберігаючи при цьому порядок не нульових значень.
+debugger
+let arr = [0,45,7,0,46,0,345];
+function replace (mass){
+    let num = [];
+    for (let i = 0; i < mass.length; i++) {
+        (mass[i]!=0) ? num.push(mass.splice([i],1)):{};
+    }
+    for (let i = 0; i < num.length; i++) {
+        num[i].push(mass);
+    }
+    return mass;
+}
+replace(arr);
 // Двожина масиву від 2 до 100
 // Приклад
 // [1,0,6,0,3] => [1,6,3,0,0]
@@ -241,10 +292,45 @@
 // Выведите слово YES, если число N является точной степенью двойки,
 // или слово NO в противном случае.
 // Операцией возведения в степень пользоваться нельзя!
-//
+
+
 // 2) Deep Copy
 // реалізувати глибоке копіювання обєкту за допомогою рекурсій
 //
 // 3) Flat
 // Вирівняти багаторівневий масив в однорівневий
-// [1,3, ['Hello, 'Wordd', [9,6,1]], ['oops'], 9] -> [1, 3, 'Hello, 'Wordd', 9, 6, 1, 'oops', 9]
+//[1, 3, ['Hello', 'Wordd', [9,6,1]], ['oops'], 9] -> [1, 3, 'Hello', 'Wordd', 9, 6, 1, 'oops', 9]
+
+// let arr = [1, 3, ['Hello', 'Wordd', [9,6,1]], ['oops'], 9];
+// let arrNew = arr.flat(Infinity);
+//
+// console.log(arr);
+// console.log(arrNew);
+
+
+//зачистити выдступи окрім пробілу між словами
+// let str='         Harry       Poter       '; // Harry Poter
+//let str='        Hermiona         Volta       '; // Hermiona Volta
+//  let str='       John        Doe            ';  // John Doe
+
+// function concat(txt) {
+//     let newArr = [];
+//     let strings = txt.split(' ');
+//     for (let i = 0; i < strings.length; i++) {
+//         if (strings[i] != '') {
+//             newArr.push(strings[i]);
+//             newArr.push(' ');
+//         }
+//     }
+//     let str = newArr.join('');
+//     return str.trim();
+// }
+//
+// let result = concat(str);
+// console.log(result);
+
+
+function ar (name){
+
+}
+ar(arr)
