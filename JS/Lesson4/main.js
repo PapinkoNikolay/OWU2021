@@ -198,26 +198,36 @@
 // sumArr(mass1,mass2);
 
 // - *** приймає масив та число "i", та міняє місцями об`єкт який знаходиться в індексі "i" на "i+1"
-// let arr = []
-// function replace (mass,i){
-//
-// }
-// replace(arr,5);
 
-// - *** створити функцію яка буде переносити елементи з значенням 0 у кінець маисву. Зберігаючи при цьому порядок не нульових значень.
-debugger
-let arr = [0,45,7,0,46,0,345];
+let arr = ['one','two','thre'];
 function replace (mass){
-    let num = [];
     for (let i = 0; i < mass.length; i++) {
-        (mass[i]!=0) ? num.push(mass.splice([i],1)):{};
+        console.log(mass[i]);
+
     }
-    for (let i = 0; i < num.length; i++) {
-        num[i].push(mass);
-    }
-    return mass;
 }
 replace(arr);
+
+// - *** створити функцію яка буде переносити елементи з значенням 0 у кінець маисву. Зберігаючи при цьому порядок не нульових значень.
+
+// let arr = [0, 45, 7, 0, 46, 0, 345];
+//
+// function replace(mass) {
+//     let count = 0;
+//     let num = [];
+//     for (let i = 0; i < mass.length; i++) {
+//         (mass[i] !== 0) ? num.push(mass[i]) : count++;
+//     }
+//     for (let i = 0; i < count; i++) {
+//         num.push(0);
+//     }
+//     return num;
+// }
+//
+// console.log(arr);
+// console.log(replace(arr));
+
+
 // Двожина масиву від 2 до 100
 // Приклад
 // [1,0,6,0,3] => [1,6,3,0,0]
@@ -233,6 +243,28 @@ replace(arr);
 // Для кожного автомобіля створити свій блок, та додати його в елемент, індентифікатор якого ви отримали.
 // Для кожної властивості створити всередені блока автомоблія свій блок
 //
+// let cars = [{name:'car1'},{name:'car2'},{name:'car3'},{name:'car4'}];
+//
+// function upgrade (type,txt,carsArr,id){
+//
+//     const text = document.createElement('div');
+//     text.innerText= 'Hello owu';
+//     text.id='taskId';
+//     document.body.appendChild(text);
+//     const text1 =document.createElement(`${type}`);
+//     text1.innerText = `${txt}`;
+//     document.body.appendChild(text1);
+//     for (let i = 0; i < carsArr.length; i++) {
+//         carsArr[i] = document.createElement('div');
+//
+//
+//
+//
+//
+//     }
+//
+// }
+// upgrade('h1','World',cars,'taskId')
 // (на основі минулого ДЗ)
 // **- функція приймає 2 масиви з рівною кількістю об'єктів та з'єднює в один об'єкт користувача та місто з відповідними "id" та "user_id",
 // та повертає масив цих з'єднаних об'єктів.
@@ -328,9 +360,3 @@ replace(arr);
 //
 // let result = concat(str);
 // console.log(result);
-
-
-function ar (name){
-
-}
-ar(arr)
